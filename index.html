@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Album</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="auth-screen" class="screen">
+        <button id="login-button">Connect to Google Photos</button>
+    </div>
+
+    <div id="album-selection-screen" class="screen" style="display: none;">
+        <h2>Select an Album</h2>
+        <div id="album-grid"></div>
+    </div>
+
+    <div id="slideshow-screen" class="screen" style="display: none;">
+        <div id="slideshow-container"></div>
+        <button id="back-to-albums">Back to Albums</button>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
