@@ -13,7 +13,7 @@ let slideshowInterval;
 function gisInitalized() {
     tokenClient = google.accounts.oauth2.initTokenClient({
         client_id: CLIENT_ID,
-        scope: 'https://www.googleapis.com/auth/photoslibrary.readonly',
+        scope: 'https://www.googleapis.com/auth/photoslibrary.readonly.originals',
         callback: (tokenResponse) => {
             accessToken = tokenResponse.access_token;
             showScreen('album-selection');
